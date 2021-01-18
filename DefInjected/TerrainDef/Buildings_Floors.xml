@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TerrainDef ParentName="FloorBase">
+		<defName>MAO_BlackConcrete</defName>
+		<label>black concrete</label>
+		<description>Rough concrete. At the cost of a bit more work, the concrete is given a darker shade.</description>
+		<texturePath>Things/Building/Floors/FactoryFloor</texturePath>
+		<designatorDropdown>MAO_Floor_Concrete</designatorDropdown>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>70</renderPrecedence>
+		<statBases>
+			<Beauty>0</Beauty>
+			<WorkToBuild>200</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+		<designationHotKey>Misc6</designationHotKey>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	<DesignatorDropdownGroupDef>
+		<defName>MAO_Floor_Concrete</defName>
+		<label>concrete</label>
+	</DesignatorDropdownGroupDef>
+</Defs>
