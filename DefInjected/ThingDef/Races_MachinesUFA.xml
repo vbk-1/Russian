@@ -54,24 +54,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>MAO_Mechanoids_Mender</defName>
-		<label>mender</label>
-		<race>MAO_Mechanoids_Mender</race>
-		<combatPower>99999</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Mechanoid/Mender/Mender</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.8</drawSize>
-					<shadowData>
-						<volume>(0.6, 0.8, 0.6)</volume>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
+
 	<ThingDef ParentName="BaseVFEMachine">
 		<defName>MAO_Mechanoids_Assembler</defName>
 		<label>assembler</label>
@@ -126,22 +109,4 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>MAO_Mechanoids_Assembler</defName>
-		<label>assembler</label>
-		<race>MAO_Mechanoids_Assembler</race>
-		<combatPower>99999</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Mechanoid/Assembler/Assembler</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.8</drawSize>
-					<shadowData>
-						<volume>(0.6, 0.8, 0.6)</volume>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
 </Defs>

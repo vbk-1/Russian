@@ -73,25 +73,4 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>VFE_AncientMech_AncientCarpenter</defName>
-		<label>carpenter</label>
-		<race>VFE_AncientMech_AncientCarpenter</race>
-		<combatPower>400</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/MechanoidFaction/VFE_MechAncientCarpenter</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>3.4</drawSize>
-					<shadowData>
-						<volume>(1.4, 1.8, 1.4)</volume>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
-
-
-
 </Defs>

@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <ThingDef ParentName="BaseMechanoid" Name="BaseVFEMachine" Abstract="True">
-	<thingClass>VFEMech.Machine</thingClass>
-  </ThingDef>
-  
   <ThingDef ParentName="BaseVFEMachine">
     <defName>VFE_Mechanoids_Autocleaner</defName>
     <label>autocleaner</label>
@@ -59,23 +55,7 @@
 	</comps>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
-    <defName>VFE_Mechanoids_Autocleaner</defName>
-    <label>autocleaner</label>
-    <race>VFE_Mechanoids_Autocleaner</race>
-    <combatPower>99999</combatPower>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automation/Autocleaner/Autocleaner</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
+ 
   
   <ThingDef ParentName="BaseVFEMachine">
     <defName>VFE_Mechanoids_Autohauler</defName>
@@ -131,24 +111,7 @@
 	</comps>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
-    <defName>VFE_Mechanoids_Autohauler</defName>
-    <label>autohauler</label>
-    <race>VFE_Mechanoids_Autohauler</race>
-    <combatPower>99999</combatPower>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automation/Autohauler/Autohauler</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
+
 
   <ThingDef ParentName="BaseVFEMachine">
     <defName>VFE_Mechanoids_Autominer</defName>
@@ -204,24 +167,6 @@
 	</comps>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
-    <defName>VFE_Mechanoids_Autominer</defName>
-    <label>autominer</label>
-    <race>VFE_Mechanoids_Autominer</race>
-    <combatPower>99999</combatPower>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automation/Autominer/Autominer</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
 
   <ThingDef ParentName="BaseVFEMachine">
     <defName>VFE_Mechanoids_Combat</defName>
@@ -278,24 +223,6 @@
 	</comps>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
-    <defName>VFE_Mechanoids_Combat</defName>
-    <label>combat mechanoid</label>
-    <race>VFE_Mechanoids_Combat</race>
-    <combatPower>99999</combatPower>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automation/CombatMechanoid/CombatMechanoid</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.8</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
   
   <ThingDef ParentName="BaseVFEMachine">
     <defName>VFE_Mechanoids_Riot</defName>
@@ -364,24 +291,6 @@
 	</comps>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
-    <defName>VFE_Mechanoids_Riot</defName>
-    <label>riot mechanoid</label>
-    <race>VFE_Mechanoids_Riot</race>
-    <combatPower>99999</combatPower>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automation/RiotMechanoid/RiotMechanoid</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.6</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
   
   <ThingDef ParentName="BaseVFEMachine">
     <defName>VFE_Mechanoids_Turret</defName>
@@ -438,22 +347,4 @@
 	</comps>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
-    <defName>VFE_Mechanoids_Turret</defName>
-    <label>mobile turret</label>
-    <race>VFE_Mechanoids_Turret</race>
-    <combatPower>99999</combatPower>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Automation/MobileTurret/MobileTurret</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
-        </bodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
 </Defs>

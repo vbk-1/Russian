@@ -88,12 +88,4 @@ Now the choice is yours - will you disassemble it to not tempt so many raiders t
     </scenario>
   </ScenarioDef>
 
-  <ScenPartDef>
-    <defName>VFEM_StartingPackAnimal</defName>
-    <label>start with pack animal(s)</label>
-    <scenPartClass>VFEM.ScenPart_StartingPackAnimal</scenPartClass>
-    <category>StartingImportant</category>
-    <selectionWeight>1.0</selectionWeight>
-    <summaryPriority>305</summaryPriority>
-  </ScenPartDef>
 </Defs>

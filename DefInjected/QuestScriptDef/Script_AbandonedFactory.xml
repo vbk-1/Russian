@@ -1,167 +1,56 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN:
+    <li>questName->The [abandoned] [factory]</li>
+    <li>questName->[abandoned] [factory]</li>
+    <li>questName->[asker_nameDef] and the [abandoned] [factory]</li>
+    <li>abandoned->Abandoned</li>
+    <li>abandoned->Old</li>
+    <li>abandoned->Decomissioned</li>
+    <li>abandoned->Ruined</li>
+    <li>factory->Factory</li>
+    <li>factory->Production Line</li>
+    <li>factory->Automated Factory</li>
+    <li>factory->Manufacturing site</li>
+  -->
+  <VFE_OpportunitySite_AbandonedFactory.questNameRules.rulesStrings>
+    <li>questName->[abandoned] [factory]</li>
+    <li>questName->[asker_nameDef] и [abandoned] [factory]</li>
+    <li>abandoned->Заброшенная</li>
+    <li>abandoned->Брошенная</li>
+    <li>abandoned->Старая</li>
+    <li>abandoned->Забытая</li>
+    <li>abandoned->Разрушенная</li>
+    <li>factory->фабрика</li>
+    <li>factory->автофабрика</li>
+    <li>factory->линия производства</li>
+    <li>factory->мануфактура</li>
+    <li>factory->мастерская</li>
+  </VFE_OpportunitySite_AbandonedFactory.questNameRules.rulesStrings>
 
-  <QuestScriptDef>
-    <defName>VFE_OpportunitySite_AbandonedFactory</defName>
-    <rootSelectionWeight>0.35</rootSelectionWeight>
-    <rootMinPoints>350</rootMinPoints>
-    <canGiveRoyalFavor>false</canGiveRoyalFavor>
-    <expireDaysRange>6~10</expireDaysRange>
-    <questNameRules>
-      <rulesStrings>
-        <li>questName->The [abandoned] [factory]</li>
-        <li>questName->[abandoned] [factory]</li>
-        <li>questName->[asker_nameDef] and the [abandoned] [factory]</li>
-        <li>abandoned->Abandoned</li>
-        <li>abandoned->Old</li>
-        <li>abandoned->Decomissioned</li>
-        <li>abandoned->Ruined</li>
-        <li>factory->Factory</li>
-        <li>factory->Production Line</li>
-        <li>factory->Automated Factory</li>
-        <li>factory->Manufacturing site</li>
-      </rulesStrings>
-    </questNameRules>
-    <questDescriptionRules>
-      <rulesStrings>
-        <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has sent us a message. Apparently, [siteFaction_pawnsPlural] based in a nearby abandoned factory have been raiding their caravans. The factory site is controlled by [siteFaction_name]. It can be a great opportunity to obtain factory elements and mechanoid components.
-\n[asker_nameDef] is asking us to eliminate the threat, and cares not about the fate of the old machine pieces. [asker_label] says that [sitePart0_description].</li>
-      </rulesStrings>
-	  
-<!-- Things below I have not touched -->
-	  
-	  
-    </questDescriptionRules>
-    <root Class="QuestNode_Sequence">
-      <nodes>
-        <li Class="QuestNode_SubScript">
-          <def>Util_RandomizePointsChallengeRating</def>
-          <parms>
-            <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
-            <pointsFactorThreeStar>2</pointsFactorThreeStar>
-          </parms>
-        </li>
-        <li Class="QuestNode_SubScript">
-          <def>Util_AdjustPointsForDistantFight</def>
-        </li>
-        <li Class="QuestNode_GetMap" />
 
-        <li Class="QuestNode_GetPawn">
-          <storeAs>asker</storeAs>
-          <mustBeFactionLeader>true</mustBeFactionLeader>
-          <allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
-          <hostileWeight>0.15</hostileWeight>
-        </li>
+  <!-- EN:
+    <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has sent us a message. Apparently, [siteFaction_pawnsPlural] based in a nearby abandoned factory have been raiding their caravans. The factory site is controlled by [siteFaction_name]. It can be a great opportunity to obtain factory elements and mechanoid components.\n\n[asker_nameDef] is asking us to eliminate the threat, and cares not about the fate of the old machine pieces. [asker_label] says that [sitePart0_description].</li>
+  -->
+  <VFE_OpportunitySite_AbandonedFactory.questDescriptionRules.rulesStrings>
+    <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] фракции [asker_faction_name], передаёт нам сообщение.\n\nПо всей видимости, [siteFaction_pawnsPlural] из фракции [siteFaction_name] обосновались в производственных зданиях и грабят их караваны. Это отличная возможность получить компоненты механоидов и элементы производства.\n\n[asker_nameDef] желает лишь избавиться от угрозы, а судьба компонентов механоидов [asker_possessive] не волнует. [asker_label] говорит, что [sitePart0_description].</li>
+  </VFE_OpportunitySite_AbandonedFactory.questDescriptionRules.rulesStrings>
 
-        <li Class="QuestNode_GetSiteTile">
-          <storeAs>siteTile</storeAs>
-          <preferCloserTiles>true</preferCloserTiles>
-        </li>
 
-        <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
-          <storeAs>sitePartDefs</storeAs>
-          <storeFactionAs>siteFaction</storeFactionAs>
-          <sitePartsTags>
-            <li><tag>VFEV_AbandonedFactory</tag></li>
-            <li><tag>KCSG_EnnemiesPresence</tag></li>
-          </sitePartsTags>
-          <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
-        </li>
-
-        <li Class="QuestNode_GetDefaultSitePartsParams">
-          <tile>$siteTile</tile>
-          <faction>$siteFaction</faction>
-          <sitePartDefs>$sitePartDefs</sitePartDefs>
-          <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
-        </li>
-        
-        <li Class="QuestNode_GetSiteThreatPoints">
-          <storeAs>sitePoints</storeAs>
-          <sitePartsParams>$sitePartsParams</sitePartsParams>
-        </li>
-        <li Class="QuestNode_SubScript">
-          <def>Util_GetDefaultRewardValueFromPoints</def>
-          <parms>
-            <!-- Use the actual threat points generated (some site parts define a minimum threshold) -->
-            <points>$sitePoints</points>
-          </parms>
-        </li>
-
-        <!-- Inflate reward value. Since we're basing the reward value on the threat points generated, we need to do this
-             even though the threat points was deflated from the input points already. -->
-        <li Class="QuestNode_Multiply">
-            <value1>$rewardValue</value1>
-            <value2>1.75</value2>
-            <storeAs>rewardValue</storeAs>
-        </li>
-
-        <li Class="QuestNode_SubScript">
-          <def>Util_GenerateSite</def>
-        </li>
-        
-        <li Class="QuestNode_SpawnWorldObjects">
-          <worldObjects>$site</worldObjects>
-        </li>
-
-        <li Class="QuestNode_WorldObjectTimeout">
-          <worldObject>$site</worldObject>
-          <isQuestTimeout>true</isQuestTimeout>
-          <delayTicks>$(randInt(12,28)*60000)</delayTicks>
-          <inSignalDisable>site.MapGenerated</inSignalDisable>
-          <node Class="QuestNode_Sequence">
-            <nodes>
-              <li Class="QuestNode_Letter">
-                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
-                <text TKey="LetterTextQuestExpired">The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired.</text>
-              </li>
-              <li Class="QuestNode_End">
-                <outcome>Fail</outcome>
-              </li>
-            </nodes>
-          </node>
-        </li>
-
-        <!-- If we enter and leave, the map is destroyed. Fail the quest. -->
-        <li Class="QuestNode_Signal">
-          <inSignal>site.Destroyed</inSignal>
-          <node Class="QuestNode_Sequence">
-            <nodes>
-              <li Class="QuestNode_Letter">
-                <label TKey="LetterLabelQuestFailed">Quest failed: [resolvedQuestName]</label>
-                <text TKey="LetterTextQuestFailed">After being discovered, the bandit camp has dispersed. The quest [resolvedQuestName] has ended.</text>
-              </li>
-              <li Class="QuestNode_End">
-                <outcome>Fail</outcome>
-              </li>
-            </nodes>
-          </node>
-        </li>
-
-        <li Class="QuestNode_Signal">
-          <inSignal>site.AllEnemiesDefeated</inSignal>
-          <node Class="QuestNode_GiveRewards">
-            <parms>
-              <allowGoodwill>true</allowGoodwill>
-              <allowRoyalFavor>true</allowRoyalFavor>
-              <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
-            </parms>
-            <addCampLootReward>true</addCampLootReward>
-            <customLetterLabel TKey="LetterLabelPaymentArrived">Payment arrived</customLetterLabel>
-            <customLetterText TKey="LetterTextPaymentArrived">You have defeated the bandit camp!\n\nThe payment from [asker_faction_name] has arrived.</customLetterText>
-            <nodeIfChosenPawnSignalUsed Class="QuestNode_Letter">
-              <letterDef>ChoosePawn</letterDef>
-              <label TKey="LetterLabelFavorReceiver">[asker_faction_royalFavorLabel]</label>
-              <text TKey="LetterTextFavorReceiver">These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] for this service.</text>
-              <useColonistsOnMap>$site</useColonistsOnMap>
-              <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
-            </nodeIfChosenPawnSignalUsed>
-          </node>
-        </li>
-        <li Class="QuestNode_End">
-          <inSignal>site.AllEnemiesDefeated</inSignal>
-          <outcome>Success</outcome>
-        </li>
-      </nodes>
-    </root>
-  </QuestScriptDef>
-</Defs>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <VFE_OpportunitySite_AbandonedFactory.LetterLabelQuestExpired.slateRef>Время задания истекло: [resolvedQuestName]</VFE_OpportunitySite_AbandonedFactory.LetterLabelQuestExpired.slateRef>
+  <!-- EN: The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired. -->
+  <VFE_OpportunitySite_AbandonedFactory.LetterTextQuestExpired.slateRef>Механоиды свернули лагерь и отправились в другое место. Время, отведённое для задания [resolvedQuestName], истекло.</VFE_OpportunitySite_AbandonedFactory.LetterTextQuestExpired.slateRef>
+  <!-- EN: Quest failed: [resolvedQuestName] -->
+  <VFE_OpportunitySite_AbandonedFactory.LetterLabelQuestFailed.slateRef>Задание провалено: «[resolvedQuestName]»</VFE_OpportunitySite_AbandonedFactory.LetterLabelQuestFailed.slateRef>
+  <!-- EN: After being discovered, the bandit camp has dispersed. The quest [resolvedQuestName] has ended. -->
+  <VFE_OpportunitySite_AbandonedFactory.LetterTextQuestFailed.slateRef>Поняв, что их местонахождение известно, механоиды свернули лагерь и отправились в другое место. Задание «[resolvedQuestName]» окончено.</VFE_OpportunitySite_AbandonedFactory.LetterTextQuestFailed.slateRef>
+  <!-- EN: Payment arrived -->
+  <VFE_OpportunitySite_AbandonedFactory.LetterLabelPaymentArrived.slateRef>Оплата прибыла</VFE_OpportunitySite_AbandonedFactory.LetterLabelPaymentArrived.slateRef>
+  <!-- EN: You have defeated the bandit camp!\n\nThe payment from [asker_faction_name] has arrived. -->
+  <VFE_OpportunitySite_AbandonedFactory.LetterTextPaymentArrived.slateRef>Вы уничтожили лагерь механоидов!\n\nПрибыла оплата от фракции [asker_faction_name].</VFE_OpportunitySite_AbandonedFactory.LetterTextPaymentArrived.slateRef>
+  <!-- EN: [asker_faction_royalFavorLabel] -->
+  <VFE_OpportunitySite_AbandonedFactory.LetterLabelFavorReceiver.slateRef>[asker_faction_royalFavorLabel]</VFE_OpportunitySite_AbandonedFactory.LetterLabelFavorReceiver.slateRef>
+  <!-- EN: These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] for this service. -->
+  <VFE_OpportunitySite_AbandonedFactory.LetterTextFavorReceiver.slateRef>Эти поселенцы приняли участие в успешном завершении задания [resolvedQuestName]. [asker_definite] спрашивает, кому из них за свою службу причитается [royalFavorReward_amount] ед. ^Replace( [asker_faction_royalFavorLabel] | 'милость короны'-'милости короны')^.</VFE_OpportunitySite_AbandonedFactory.LetterTextFavorReceiver.slateRef>
+</LanguageData>
