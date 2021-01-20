@@ -1,27 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Mechanoid Upgrade Warning -->
+  <firstWarning.label>Модернизация механоидов близко</firstWarning.label>
+  <!-- EN: The mechanoids are close to obtaining critical mass before they receive a hardware upgrade. Destroy their ships to stop them. -->
+  <firstWarning.description>Количество механоидов на планете приближается к критической отметке, после которой они получат техническое улучшение. Уничтожьте корабли механоидов, чтобы помешать этому.</firstWarning.description>
 
-  <VFEMech.MechUpgradeWarningDef>
-    <defName>firstWarning</defName>
-    <label>Mechanoid Upgrade Warning</label>
-    <description>The mechanoids are close to obtaining critical mass before they receive a hardware upgrade. Destroy their ships to stop them.</description>
-    <presenceRequired>3200</presenceRequired>
-    <sendLetter>true</sendLetter>
-  </VFEMech.MechUpgradeWarningDef>
-  
-  <VFEMech.MechUpgradeWarningDef>
-    <defName>secondWarning</defName>
-    <label>Mechanoid Upgrade Imminent</label>
-    <description>The mechanoids are going to obtain critical mass and receive a hardware upgrade soon if you don't destroy their ships.</description>
-    <presenceRequired>6400</presenceRequired>
-    <sendLetter>true</sendLetter>
-  </VFEMech.MechUpgradeWarningDef>
-  
-  <VFEMech.MechUpgradeWarningDef>
-    <defName>thirdWarning</defName>
-    <label>Mechanoid Upgrade Complete</label>
-    <description>The mechanoids obtained critical mass and received a hardware upgrade. Destroy mechanoid ships to lower their presence.</description>
-    <presenceRequired>9600</presenceRequired>
-    <sendLetter>true</sendLetter>
-  </VFEMech.MechUpgradeWarningDef>
-</Defs>
+  <!-- EN: Mechanoid Upgrade Imminent -->
+  <secondWarning.label>Модернизация механоидов неизбежна</secondWarning.label>
+  <!-- EN: The mechanoids are going to obtain critical mass and receive a hardware upgrade soon if you don't destroy their ships. -->
+  <secondWarning.description>На поверхности планеты скопилось достаточно механоидов, чтобы получить техническое улучшение. Оно случится совсем скоро, если вы не уничтожите их корабли.</secondWarning.description>
+
+  <!-- EN: Mechanoid Upgrade Complete -->
+  <thirdWarning.label>Модернизация механоидов завершена</thirdWarning.label>
+  <!-- EN: The mechanoids obtained critical mass and received a hardware upgrade. Destroy mechanoid ships to lower their presence. -->
+  <thirdWarning.description>На поверхности планеты скопилось достаточно механоидов и они получили техническое улучшение. Уничтожьте корабли, чтобы снизить присутствие механоидов.</thirdWarning.description>
+</LanguageData>

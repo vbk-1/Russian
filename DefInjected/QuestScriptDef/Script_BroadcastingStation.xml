@@ -32,6 +32,7 @@
     <li>broadcasting->транслирующая</li>
     <li>broadcasting->глушащая</li>
     <li>station->станция</li>
+    <li>station->радиостанция</li>
     <li>station->база</li>
     <li>station->антенна</li>
     <li>station->вышка</li>

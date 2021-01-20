@@ -1,27 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-  
-  <SitePartDef>
-    <defName>VFE_MechanoidAttackParty</defName>
-    <label>a friendly outpost under mech attack</label>
-    <description>A stranded, incapacitated refugee begging for help.</description>
-    <workerClass>VFEMech.SitePartWorker_MechanoidAttackParty</workerClass>
-    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
-    <expandingIconTexture>World/QuestIcons/MechanoidAttackParty</expandingIconTexture>
-    <forceExitAndRemoveMapCountdownDurationDays>16</forceExitAndRemoveMapCountdownDurationDays>
-    <increasesPopulation>true</increasesPopulation>
-    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
-    <tags>
-      <li>VFE_MechanoidAttackParty</li>
-    </tags>
-  </SitePartDef>
-
-  <GenStepDef>
-    <defName>VFE_MechanoidAttackParty</defName>
-    <linkWithSite>VFE_MechanoidAttackParty</linkWithSite>
-    <order>480</order>
-    <genStep Class="VFEMech.GenStep_MechanoidAttackParty">
-    </genStep>
-  </GenStepDef>
-
-</Defs>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: a friendly outpost under mech attack -->
+  <VFE_MechanoidAttackParty.label>союзники под атакой механоидов</VFE_MechanoidAttackParty.label>
+  <!-- EN: A stranded, incapacitated refugee begging for help. -->
+  <VFE_MechanoidAttackParty.description>Застрявшие и обессилившие, умоляют о помощи.</VFE_MechanoidAttackParty.description>
+</LanguageData>

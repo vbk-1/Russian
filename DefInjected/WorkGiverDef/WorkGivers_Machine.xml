@@ -1,31 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: repair machine -->
+  <VFE_Mechanoids_RepairMachine.label>чинить машины</VFE_Mechanoids_RepairMachine.label>
+  <!-- EN: repairing -->
+  <VFE_Mechanoids_RepairMachine.gerund>починить</VFE_Mechanoids_RepairMachine.gerund>
+  <!-- EN: repair -->
+  <VFE_Mechanoids_RepairMachine.verb>починить</VFE_Mechanoids_RepairMachine.verb>
 
-  <WorkGiverDef>
-    <defName>VFE_Mechanoids_RepairMachine</defName>
-    <label>repair machine</label>
-    <giverClass>VFE.Mechanoids.AI.WorkGivers.WorkGiver_RepairMachine</giverClass>
-    <workType>Hauling</workType>
-    <verb>repair</verb>
-    <gerund>repairing</gerund>
-    <priorityInType>140</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-  <WorkGiverDef>
-    <defName>VFE_Mechanoids_AttachTurret</defName>
-    <label>attach turret</label>
-    <giverClass>VFE.Mechanoids.AI.WorkGivers.WorkGiver_AttachTurret</giverClass>
-    <workType>Hauling</workType>
-    <verb>attach turret to</verb>
-    <gerund>attaching turret to</gerund>
-    <priorityInType>141</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-
-</Defs>
+  <!-- EN: attach turret -->
+  <VFE_Mechanoids_AttachTurret.label>прикреплять турели</VFE_Mechanoids_AttachTurret.label>
+  <!-- EN: attaching turret to -->
+  <VFE_Mechanoids_AttachTurret.gerund>прикрепить к</VFE_Mechanoids_AttachTurret.gerund>
+  <!-- EN: attach turret to -->
+  <VFE_Mechanoids_AttachTurret.verb>прикрепить к</VFE_Mechanoids_AttachTurret.verb>
+ </LanguageData>

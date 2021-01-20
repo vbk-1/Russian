@@ -1,12 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-  <WorldObjectDef>
-    <defName>VFEM_TravelingMissile</defName>
-    <label>missile</label>
-    <description>missile in flight.</description>
-    <worldObjectClass>VFEMech.TravelingMissile</worldObjectClass>
-    <texture>World/MapObject_LongRangeMissile</texture>
-    <useDynamicDrawer>true</useDynamicDrawer>
-    <expandingIcon>false</expandingIcon>
-  </WorldObjectDef>
-</Defs>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: missile -->
+  <VFEM_TravelingMissile.label>ракета</VFEM_TravelingMissile.label>
+  <!-- EN: missile in flight. -->
+  <VFEM_TravelingMissile.description>Летящая ракета.</VFEM_TravelingMissile.description>
+</LanguageData>

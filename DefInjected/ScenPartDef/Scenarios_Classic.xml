@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-
-  <ScenPartDef>
-    <defName>VFEM_StartingPackAnimal</defName>
-    <label>start with pack animal(s)</label>
-    <scenPartClass>VFEM.ScenPart_StartingPackAnimal</scenPartClass>
-    <category>StartingImportant</category>
-    <selectionWeight>1.0</selectionWeight>
-    <summaryPriority>305</summaryPriority>
-  </ScenPartDef>
-</Defs>
+<LanguageData>
+  <!-- EN: start with pack animal(s) -->
+  <VFEM_StartingPackAnimal.label>начать с группой животных</VFEM_StartingPackAnimal.label>
+</LanguageData>
