@@ -4,8 +4,8 @@
 	<!-- Generic -->
 
 
-	<VFEM_BringIngredients>Extract Ingredients</VFEM_BringIngredients>
-	<VFEM_BringIngredientsDesc>Extract ingredients from adjacent hoppers to start the process</VFEM_BringIngredientsDesc>
-	<VFEMech.MustPlaceOnFactoryFloor>Must be placed directly on a factory floor.</VFEMech.MustPlaceOnFactoryFloor>
-	<VFEMech.MustPlaceOnPowerConduit>Must be placed directly on a power conduit.</VFEMech.MustPlaceOnPowerConduit>
+	<VFEM_BringIngredients>извлеките материалы</VFEM_BringIngredients>
+	<VFEM_BringIngredientsDesc>Извлеките материалы из соседних бункеров, чтобы начать процесс</VFEM_BringIngredientsDesc>
+	<VFEMech.MustPlaceOnFactoryFloor>Должен быть размещен  на заводе .</VFEMech.MustPlaceOnFactoryFloor>
+	<VFEMech.MustPlaceOnPowerConduit>Должен быть размещен  на кабеле.</VFEMech.MustPlaceOnPowerConduit>
 </LanguageData>
