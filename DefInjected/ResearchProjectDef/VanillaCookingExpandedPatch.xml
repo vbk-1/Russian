@@ -3,7 +3,7 @@
   <!-- EN: industrial cheesemaking -->
   <VFE_CheeseMaking.label>промышленное сыроварение</VFE_CheeseMaking.label>
   <!-- EN: Research a tank capable of rapidly heating milk until curds begin to form, then automatically straining and pressing them into multiple wheels of cheese at once. Nearby hoppers can hold enough milk to make several wheels and finished wheels will automatically be dispensed. -->
-  <VFE_CheeseMaking.description>Откройте специальную ёмкость, способную нагревать молоки поддерживать его в таком состоянии до образования твёрдых сгустков. Сгустки автоматически процеживаются и спрессовываются до формирования нескольких голов сыра. При достаточном количестве молока, сразу несколько сырных голов будут автоматически готовиться и выгружаться.</VFE_CheeseMaking.description>
+  <VFE_CheeseMaking.description>Откройте специальную ёмкость, способную нагревать молоко и поддерживать его в таком состоянии до образования твёрдых сгустков. Сгустки автоматически процеживаются и спрессовываются до формирования нескольких голов сыра. При достаточном количестве молока, сразу несколько сырных голов будут автоматически готовиться и выгружаться.</VFE_CheeseMaking.description>
 
   <!-- EN: industrial soups -->
   <VFE_IndustrialSoups.label>промышленное суповарение</VFE_IndustrialSoups.label>

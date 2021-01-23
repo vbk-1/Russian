@@ -79,12 +79,12 @@
   -->
   <VFE_NamerFactionMechanoid.rulePack.rulesFiles>
     <li>fmechpart->Words/adjective_meh</li>
-    <li>natoalphabet->Words/nato_num</li>
+    <li>natoalphabet->Words/math_num</li>
   </VFE_NamerFactionMechanoid.rulePack.rulesFiles>
 
   <VFE_NamerFactionMechanoid.rulePack.rulesStrings>
-    <li>r_name->Мехрой [natoalphabet] «[fmechpart]ое [smechpart]»</li>
-    <li>r_name->Мехрой [natoalphabet] «[fmechpart]ая [smechpartF]»</li>
+    <li>r_name->Мехрой [natoalphabet]-[Digit] «[fmechpart]ое [smechpart]»</li>
+    <li>r_name->Мехрой [natoalphabet]-[Digit] «[fmechpart]ая [smechpartF]»</li>
 
     <li>smechpartF->война</li>
     <li>smechpartF->опека</li>
